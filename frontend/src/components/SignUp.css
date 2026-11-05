@@ -1,0 +1,126 @@
+/* ── Card ── */
+.signup-card {
+  width: 100%;
+  max-width: 340px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 40px 36px 36px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ── Title ── */
+.signup-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #3cc8b4;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+}
+
+
+/* ── Form ── */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ── Input Group ── */
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 13px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.card-input {
+  width: 100%;
+  padding: 12px 14px 12px 38px;
+  font-size: 14px;
+  color: #2d3748;
+  background-color: #f4f7f9;
+  border: 1.5px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.card-input::placeholder {
+  color: #aab4be;
+  font-size: 14px;
+}
+
+.card-input:focus {
+  border-color: #3cc8b4;
+  background-color: #ffffff;
+}
+
+/* Prevent browser autofill blue tint */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #f4f7f9 inset !important;
+  -webkit-text-fill-color: #2d3748 !important;
+}
+
+/* ── Submit Button ── */
+.signup-submit-btn {
+  width: 100%;
+  margin-top: 6px;
+  padding: 13px 0;
+  background-color: #3cc8b4;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.signup-submit-btn:hover:not(:disabled) {
+  background-color: #2fb5a0;
+}
+
+.signup-submit-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.signup-submit-btn:disabled {
+  background-color: #8addd2;
+  cursor: not-allowed;
+}
+
+/* ── Alerts ── */
+.alert {
+  padding: 9px 12px;
+  border-radius: 6px;
+  font-size: 12.5px;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.alert-error {
+  background-color: #ffebee;
+  color: #d32f2f;
+  border: 1px solid #ffcdd2;
+}
+
+.alert-success {
+  background-color: #e0f7f4;
+  color: #2a9d8f;
+  border: 1px solid #b2dfdb;
+}
